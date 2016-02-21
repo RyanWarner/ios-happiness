@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C9Happiness11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
+- "window"
 - "applicationWillEnterForeground"
 - "applicationWillResignActive"
+- "applicationDidBecomeActive"
 - "applicationDidEnterBackground"
-- "application"
 - "applicationWillTerminate"
-- "window"
+- "application"
 depends-top-level:
 - "UIResponder"
+- "UIWindow"
 - "UIApplicationDelegate"
 - !private "BooleanLiteralType"
-- "AppDelegate"
 - "AnyObject"
-- "UIWindow"
+- "UIApplication"
+- "AppDelegate"
 - "Bool"
 - "NSObject"
-- "UIApplication"
 depends-member:
 - ["PSs9AnyObject", "application"]
 - ["PSs9AnyObject", "applicationDidBecomeActive"]

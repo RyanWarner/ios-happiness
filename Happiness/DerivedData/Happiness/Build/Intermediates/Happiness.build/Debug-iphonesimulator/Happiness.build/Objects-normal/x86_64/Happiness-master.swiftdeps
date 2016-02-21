@@ -1,7 +1,0 @@
-version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
-options: "8fb2c00e3125dd779d4661519c9f4222"
-build_time: [509397934, 664545000]
-inputs:
-  "/Users/ryanwarner/Desktop/_my-projects/ios-happiness/Happiness/Happiness/FaceView.swift": [9223372036854775807, 0]
-  "/Users/ryanwarner/Desktop/_my-projects/ios-happiness/Happiness/Happiness/HappinessViewController.swift": [509397720, 0]
-  "/Users/ryanwarner/Desktop/_my-projects/ios-happiness/Happiness/Happiness/AppDelegate.swift": [509397444, 0]
