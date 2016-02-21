@@ -26,6 +26,14 @@ class FaceView: UIView
 		}
 	}
 	
+	var scale: CGFloat = 0.90
+	{
+		didSet
+		{
+			setNeedsDisplay()
+		}
+	}
+	
 	var faceCenter: CGPoint
 	{
 		get
@@ -38,9 +46,21 @@ class FaceView: UIView
 	{
 		get
 		{
-			return min(bounds.size.width, bounds.size.height) / 2
+			return min(bounds.size.width, bounds.size.height) / 2 * scale
 		}
 	}
+	
+	private struct Scaling
+	{
+		static let FaceRadiusToEyeRadiusRatio: CGFloat = 10
+		static let FaceRadiusToEyeOffsetRatio: CGFloat = 3
+		static let FaceRadiusToEyeSeparationRatio: CGFloat = 1.5
+		static let FaceRadiusToMouthWidthRatio: CGFloat = 1
+		static let FaceRadiusToMouthHeightRatio: CGFloat = 3
+		static let FaceRadiusToMouthOffsetRatio: CGFloat = 3
+	}
+	
+	
 
     override func drawRect(rect: CGRect)
 	{

@@ -3,27 +3,30 @@ provides-top-level:
 - "FaceView"
 provides-nominal:
 - "C9Happiness8FaceView"
+- "VC9Happiness8FaceViewP33_E434996540128A4C284E21C46C5859457Scaling"
 provides-member:
 - ["C9Happiness8FaceView", ""]
+- ["VC9Happiness8FaceViewP33_E434996540128A4C284E21C46C5859457Scaling", ""]
 provides-dynamic-lookup:
-- "lineWidth"
-- "faceCenter"
 - "faceRadius"
 - "color"
 - "drawRect"
+- "scale"
+- "lineWidth"
+- "faceCenter"
 depends-top-level:
 - "CGPoint"
-- "CGRect"
-- !private "/"
-- !private "BooleanLiteralType"
-- "FaceView"
-- !private "M_PI"
-- "UIColor"
-- "UIView"
-- !private "min"
-- !private "UIBezierPath"
-- !private "*"
 - "CGFloat"
+- !private "/"
+- "UIColor"
+- !private "BooleanLiteralType"
+- !private "*"
+- "CGRect"
+- "FaceView"
+- !private "UIBezierPath"
+- !private "min"
+- "UIView"
+- !private "M_PI"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["PSs9AnyObject", "CGFloat"]
@@ -41,6 +44,7 @@ depends-member:
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", "lineWidth"]
 - !private ["PSs9AnyObject", "min"]
+- ["PSs9AnyObject", "scale"]
 - !private ["PSs9AnyObject", "set"]
 - !private ["PSs9AnyObject", "setNeedsDisplay"]
 - !private ["PSs9AnyObject", "stroke"]
@@ -66,6 +70,7 @@ depends-member:
 - ["PSs11CVarArgType", "init"]
 - ["PSs11CVarArgType", "lineWidth"]
 - !private ["PSs11CVarArgType", "min"]
+- ["PSs11CVarArgType", "scale"]
 - !private ["PSs11CVarArgType", "set"]
 - !private ["PSs11CVarArgType", "setNeedsDisplay"]
 - !private ["PSs11CVarArgType", "stroke"]
@@ -87,6 +92,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "init"]
 - ["PSs23CustomStringConvertible", "lineWidth"]
 - !private ["PSs23CustomStringConvertible", "min"]
+- ["PSs23CustomStringConvertible", "scale"]
 - !private ["PSs23CustomStringConvertible", "set"]
 - !private ["PSs23CustomStringConvertible", "setNeedsDisplay"]
 - !private ["PSs23CustomStringConvertible", "stroke"]
@@ -108,6 +114,7 @@ depends-member:
 - ["PSs9Equatable", "init"]
 - ["PSs9Equatable", "lineWidth"]
 - !private ["PSs9Equatable", "min"]
+- ["PSs9Equatable", "scale"]
 - !private ["PSs9Equatable", "set"]
 - !private ["PSs9Equatable", "setNeedsDisplay"]
 - !private ["PSs9Equatable", "size"]
@@ -119,6 +126,7 @@ depends-member:
 - ["C9Happiness8FaceView", "CGPoint"]
 - ["C9Happiness8FaceView", "CGRect"]
 - !private ["C9Happiness8FaceView", "M_PI"]
+- !private ["C9Happiness8FaceView", "Scaling"]
 - !private ["C9Happiness8FaceView", "UIBezierPath"]
 - ["C9Happiness8FaceView", "UIColor"]
 - !private ["C9Happiness8FaceView", "bounds"]
@@ -132,6 +140,7 @@ depends-member:
 - ["C9Happiness8FaceView", "init"]
 - ["C9Happiness8FaceView", "lineWidth"]
 - !private ["C9Happiness8FaceView", "min"]
+- ["C9Happiness8FaceView", "scale"]
 - !private ["C9Happiness8FaceView", "setNeedsDisplay"]
 - !private ["C9Happiness8FaceView", "superview"]
 - !private ["PSs23FloatLiteralConvertible", "init"]
@@ -151,6 +160,7 @@ depends-member:
 - ["PSs8Hashable", "init"]
 - ["PSs8Hashable", "lineWidth"]
 - !private ["PSs8Hashable", "min"]
+- ["PSs8Hashable", "scale"]
 - !private ["PSs8Hashable", "set"]
 - !private ["PSs8Hashable", "setNeedsDisplay"]
 - !private ["PSs8Hashable", "stroke"]
@@ -172,6 +182,7 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "lineWidth"]
 - !private ["PSo8NSCoding", "min"]
+- ["PSo8NSCoding", "scale"]
 - !private ["PSo8NSCoding", "set"]
 - !private ["PSo8NSCoding", "setNeedsDisplay"]
 - !private ["PSo8NSCoding", "stroke"]
@@ -199,6 +210,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "lineWidth"]
 - !private ["CSo8NSObject", "min"]
+- ["CSo8NSObject", "scale"]
 - !private ["CSo8NSObject", "set"]
 - !private ["CSo8NSObject", "setNeedsDisplay"]
 - !private ["CSo8NSObject", "stroke"]
@@ -218,6 +230,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "lineWidth"]
 - !private ["PSo16NSObjectProtocol", "min"]
+- ["PSo16NSObjectProtocol", "scale"]
 - !private ["PSo16NSObjectProtocol", "set"]
 - !private ["PSo16NSObjectProtocol", "setNeedsDisplay"]
 - !private ["PSo16NSObjectProtocol", "stroke"]
@@ -241,6 +254,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "lineWidth"]
 - !private ["PSo29UIAccessibilityIdentification", "min"]
+- ["PSo29UIAccessibilityIdentification", "scale"]
 - !private ["PSo29UIAccessibilityIdentification", "setNeedsDisplay"]
 - !private ["PSo29UIAccessibilityIdentification", "superview"]
 - ["PSo29UIAccessibilityIdentification", ""]
@@ -258,6 +272,7 @@ depends-member:
 - ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "lineWidth"]
 - !private ["PSo12UIAppearance", "min"]
+- ["PSo12UIAppearance", "scale"]
 - !private ["PSo12UIAppearance", "setNeedsDisplay"]
 - !private ["PSo12UIAppearance", "superview"]
 - ["PSo12UIAppearance", ""]
@@ -275,6 +290,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "lineWidth"]
 - !private ["PSo21UIAppearanceContainer", "min"]
+- ["PSo21UIAppearanceContainer", "scale"]
 - !private ["PSo21UIAppearanceContainer", "setNeedsDisplay"]
 - !private ["PSo21UIAppearanceContainer", "superview"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -297,6 +313,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "lineWidth"]
 - !private ["PSo17UICoordinateSpace", "min"]
+- ["PSo17UICoordinateSpace", "scale"]
 - !private ["PSo17UICoordinateSpace", "setNeedsDisplay"]
 - !private ["PSo17UICoordinateSpace", "superview"]
 - ["PSo17UICoordinateSpace", ""]
@@ -314,6 +331,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "lineWidth"]
 - !private ["PSo13UIDynamicItem", "min"]
+- ["PSo13UIDynamicItem", "scale"]
 - !private ["PSo13UIDynamicItem", "setNeedsDisplay"]
 - !private ["PSo13UIDynamicItem", "superview"]
 - ["PSo13UIDynamicItem", ""]
@@ -331,6 +349,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "lineWidth"]
 - !private ["PSo18UIFocusEnvironment", "min"]
+- ["PSo18UIFocusEnvironment", "scale"]
 - !private ["PSo18UIFocusEnvironment", "setNeedsDisplay"]
 - !private ["PSo18UIFocusEnvironment", "superview"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -350,6 +369,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "lineWidth"]
 - !private ["CSo11UIResponder", "min"]
+- ["CSo11UIResponder", "scale"]
 - !private ["CSo11UIResponder", "setNeedsDisplay"]
 - !private ["CSo11UIResponder", "superview"]
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
@@ -366,6 +386,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "lineWidth"]
 - !private ["PSo18UITraitEnvironment", "min"]
+- ["PSo18UITraitEnvironment", "scale"]
 - !private ["PSo18UITraitEnvironment", "setNeedsDisplay"]
 - !private ["PSo18UITraitEnvironment", "superview"]
 - ["PSo18UITraitEnvironment", ""]
@@ -385,6 +406,7 @@ depends-member:
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "lineWidth"]
 - !private ["CSo6UIView", "min"]
+- ["CSo6UIView", "scale"]
 - !private ["CSo6UIView", "setNeedsDisplay"]
 - !private ["CSo6UIView", "superview"]
 - ["CSo6UIView", ""]
@@ -408,6 +430,7 @@ depends-member:
 - ["PSs12_Reflectable", "init"]
 - ["PSs12_Reflectable", "lineWidth"]
 - !private ["PSs12_Reflectable", "min"]
+- ["PSs12_Reflectable", "scale"]
 - !private ["PSs12_Reflectable", "setNeedsDisplay"]
 - !private ["PSs12_Reflectable", "size"]
 - !private ["PSs12_Reflectable", "superview"]
@@ -463,4 +486,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "8098830277526e2086801743ac8e0cf6"
+interface-hash: "ec75320487325ff8dad1541aec61647b"
