@@ -44,7 +44,14 @@ class FaceView: UIView
 
     override func drawRect(rect: CGRect)
 	{
-        let facePath = UIBezierPath(arcCenter: faceCenter, radius: faceRadius, startAngle: 0, endAngle: CGFloat(2 * M_PI), clockwise: true)
+        let facePath = UIBezierPath(arcCenter: faceCenter,
+									   radius: faceRadius,
+									   startAngle: 0,
+									   endAngle: CGFloat(2 * M_PI),
+									   clockwise: true)
+		facePath.lineWidth = lineWidth
+		color.set()
+		facePath.stroke()
     }
 
 }
