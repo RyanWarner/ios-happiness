@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class FaceView: UIView
 {
 	var lineWidth: CGFloat = 3
