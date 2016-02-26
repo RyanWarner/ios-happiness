@@ -11,6 +11,7 @@ import UIKit
 @IBDesignable
 class FaceView: UIView
 {
+	@IBInspectable
 	var lineWidth: CGFloat = 3
 	{
 		didSet
@@ -19,6 +20,7 @@ class FaceView: UIView
 		}
 	}
 	
+	@IBInspectable
 	var color: UIColor = UIColor.blueColor()
 	{
 		didSet
@@ -27,6 +29,7 @@ class FaceView: UIView
 		}
 	}
 	
+	@IBInspectable
 	var scale: CGFloat = 0.90
 	{
 		didSet

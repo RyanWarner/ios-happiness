@@ -10,5 +10,5 @@ import UIKit
 
 class HappinessViewController: UIViewController
 {
-	
+	var happiness: Int = 50; // 0 - Sad, 100 - happy
 }
