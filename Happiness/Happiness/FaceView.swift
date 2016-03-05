@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol FaceViewDataSource: class
+{
+	func smilinessForFaceView( sender: FaceView ) -> Double?
+}
+
 @IBDesignable
 class FaceView: UIView
 {
@@ -53,6 +58,8 @@ class FaceView: UIView
 			return min(bounds.size.width, bounds.size.height) / 2 * scale
 		}
 	}
+	
+	weak var dataSource: FaceViewDataSource?
 	
 	private struct Scaling
 	{
@@ -125,7 +132,7 @@ class FaceView: UIView
 		bezierPathForEye(.Left).stroke()
 		bezierPathForEye(.Right).stroke()
 		
-		let smiliness = 0.33
+		let smiliness = dataSource?.smilinessForFaceView(self) ?? 0.0
 		let smilePath = bezierPathForSmile(smiliness)
 		
 		smilePath.stroke()

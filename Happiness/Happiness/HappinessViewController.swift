@@ -8,7 +8,31 @@
 
 import UIKit
 
-class HappinessViewController: UIViewController
+class HappinessViewController: UIViewController, FaceViewDataSource
 {
-	var happiness: Int = 50; // 0 - Sad, 100 - happy
+	@IBOutlet weak var faceView: FaceView! {
+		didSet {
+			faceView.dataSource = self
+		}
+	}
+	
+	var happiness: Int = 10 // 0 - Sad, 100 - happy
+	{
+		didSet
+		{
+			happiness = min( max( happiness, 0 ), 100 )
+			updateUI(  )
+		}
+	}
+	
+	private func updateUI(  )
+	{
+		faceView.setNeedsDisplay()
+	}
+	
+	func smilinessForFaceView( sender: FaceView ) -> Double?
+	{
+		return Double( happiness - 50 ) / 50
+	}
+
 }
